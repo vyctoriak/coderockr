@@ -19,6 +19,23 @@
       flex-direction: column;
       justify-content: center;
       margin: 35px 80px;
+      .articles__author {
+        font-size: 24px;
+        font-weight: 400;
+        color: #2d2d2d;
+        line-height: 34px;
+      }
+      .articles__title {
+        font-weight: 700;
+        font-size: 36px;
+        color: #f1a10a;
+      }
+      .articles__content {
+        font-size: 24px;
+        font-weight: 400;
+        color: #2d2d2d;
+        line-height: 34px;
+      }
     }
     .articles__icon {
       position: absolute;

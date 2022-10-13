@@ -11,12 +11,11 @@ export default function Articles() {
             <Airplay size={320} />
           </div>
           <div className="articles__info">
-            <span>Author</span>
-            <h1>Title</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-              alias voluptatum, quos doloribus esse expedita nemo reprehenderit
-              iusto repellendus deleniti blanditiis.
+            <span className="articles__author">Author</span>
+            <h1 className="articles__title">Title</h1>
+            <p className="articles__content">
+              Saepe quia culpa vero. Velit numquam corporis nihil sint enim
+              exercitationem. Rem nulla illum sint et id dolore voluptas
             </p>
           </div>
           <CaretDoubleRight className="articles__icon" size={24} />
@@ -26,12 +25,11 @@ export default function Articles() {
             <Airplay size={320} />
           </div>
           <div className="articles__info">
-            <span>Author</span>
-            <h1>Title</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-              alias voluptatum, quos doloribus esse expedita nemo reprehenderit
-              iusto repellendus deleniti blanditiis.
+            <span className="articles__author">Author</span>
+            <h1 className="articles__title">Title</h1>
+            <p className="articles__content">
+              Saepe quia culpa vero. Velit numquam corporis nihil sint enim
+              exercitationem. Rem nulla illum sint et id dolore voluptas
             </p>
           </div>
           <CaretDoubleRight className="articles__icon" size={24} />
