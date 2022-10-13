@@ -1,5 +1,5 @@
 // css
-import './styles.scss';
+import './NavBar.scss';
 
 export default function NavBar() {
   return (

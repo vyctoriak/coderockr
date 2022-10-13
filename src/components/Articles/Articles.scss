@@ -1,0 +1,30 @@
+.articles {
+  margin-top: 60px;
+  font-family: 'Rubik', sans-serif;
+  .articles__two--colums {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .articles__item {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    position: relative;
+
+    .articles__photo {
+      width: 100%;
+    }
+    .articles__info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 35px 80px;
+    }
+    .articles__icon {
+      position: absolute;
+      bottom: 0;
+      right: 40px;
+      bottom: 40px;
+    }
+  }
+}
