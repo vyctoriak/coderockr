@@ -1,45 +1,66 @@
-.articles {
-  margin-top: 60px;
+.articles__container {
   font-family: 'Rubik', sans-serif;
-  .articles__two--colums {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .articles__item {
-    width: 100%;
-    background-color: white;
+  margin-top: 70px;
+  .article__item {
     display: flex;
+    width: 50%;
+    height: 320px;
+    background-color: white;
+    float: left;
+    margin-bottom: 70px;
     position: relative;
-
-    .articles__photo {
-      width: 100%;
+    .article__photo {
+      background-repeat: no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      img {
+        height: 100%;
+      }
     }
-    .articles__info {
+    .article__info {
+      width: 65%;
+      text-align: left;
+      padding: 10px 15px;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      margin: 35px 80px;
-      .articles__author {
-        font-size: 24px;
-        font-weight: 400;
+      align-self: center;
+      span {
         color: #2d2d2d;
-        line-height: 34px;
       }
-      .articles__title {
-        font-weight: 700;
-        font-size: 36px;
+      h3 {
         color: #f1a10a;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1; /* number of lines to show */
+        line-clamp: 1;
+        -webkit-box-orient: vertical;
       }
-      .articles__content {
-        font-size: 24px;
-        font-weight: 400;
+      p {
         color: #2d2d2d;
-        line-height: 34px;
+        width: 350px;
+        margin: 0;
+        font-size: 14px;
+        line-height: 2rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3; /* number of lines to show */
+        line-clamp: 3;
+        -webkit-box-orient: vertical;
       }
     }
-    .articles__icon {
+    &:nth-child(3n + 0) {
+      float: none;
+      float: none;
+      margin: auto 0 70px auto;
+      width: 72%;
+      height: 500px;
+    }
+    .article__icon {
       position: absolute;
-      bottom: 0;
       right: 40px;
       bottom: 40px;
     }
