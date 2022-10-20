@@ -1,7 +1,6 @@
 import { useInfiniteQuery } from 'react-query';
 import { useRef, useCallback } from 'react';
 import { getPostsPage } from '../api/axios';
-import NavBar from '../components/NavBar/NavBar';
 import Articles from '../components/Articles/Articles';
 
 export default function Home() {
@@ -31,7 +30,6 @@ export default function Home() {
 
       intObserver.current = new IntersectionObserver((posts) => {
         if (posts[0].isIntersecting && hasNextPage) {
-          console.log('We are near the last post!');
           fetchNextPage();
         }
       });
@@ -55,11 +53,7 @@ export default function Home() {
 
   return (
     <div className="home">
-      <NavBar />
-      <div className="articles__container">
-        {content}
-        {isFetchingNextPage && <p className="center">Loading More Posts...</p>}
-      </div>
+      <div className="articles__container">{content}</div>
     </div>
   );
 }

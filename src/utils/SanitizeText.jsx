@@ -1,8 +1,9 @@
-export const SanitizeText = (text) => {
+function SanitizeText(text) {
   return text
-    .trim()
     .replace(/\n/g, '')
     .replace(/\<p\>/g, '')
     .replace(/\<\/p\>/g, '')
     .replace(/\<img.*.\/\>/g, '');
-};
+}
+
+export default SanitizeText;

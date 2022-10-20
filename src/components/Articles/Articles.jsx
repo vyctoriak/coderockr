@@ -1,8 +1,9 @@
 import React from 'react';
-import { SanitizeText } from '../../utils/SanitizeText';
+import SanitizeText from '../../utils/SanitizeText';
 // css
 import { CaretDoubleRight } from 'phosphor-react';
 import './Articles.scss';
+import { Link } from 'react-router-dom';
 
 const Articles = React.forwardRef(({ props }, ref) => {
   const postBody = (
@@ -15,7 +16,9 @@ const Articles = React.forwardRef(({ props }, ref) => {
         <h3>{SanitizeText(props.title)}</h3>
         <p>{SanitizeText(props.article)}</p>
       </div>
-      <CaretDoubleRight className="article__icon" size={32} />
+      <Link to={`/articles/${props.id}`}>
+        <CaretDoubleRight className="article__icon" size={32} />
+      </Link>
     </>
   );
 
