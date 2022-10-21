@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { api } from '../api/axios';
 import { useParams } from 'react-router-dom';
-import Details from '../components/Details/Details';
+import ArticleDetail from '../components/ArticleDetail/ArticleDetail';
 
 const SingleArticlePage = () => {
   let { id } = useParams();
@@ -21,7 +21,7 @@ const SingleArticlePage = () => {
     }
   };
 
-  return article && <Details {...article} />;
+  return article && <ArticleDetail {...article} />;
 };
 
 export default SingleArticlePage;
