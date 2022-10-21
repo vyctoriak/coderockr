@@ -1,6 +1,8 @@
 // css
 import { Link } from 'react-router-dom';
 import './NavBar.scss';
+import * as Dialog from '@radix-ui/react-dialog';
+import ContactModal from '../ContactModal/ContactModal';
 
 export default function NavBar() {
   return (
@@ -10,7 +12,12 @@ export default function NavBar() {
           <li className="navbar__list__item__title">Rockr Blog</li>
         </Link>
         <li>Posts</li>
-        <li>Contact</li>
+        <Dialog.Root>
+          <Dialog.Trigger>
+            <li>Contact</li>
+          </Dialog.Trigger>
+          <ContactModal />
+        </Dialog.Root>
       </ul>
     </div>
   );
