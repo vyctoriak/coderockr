@@ -41,13 +41,7 @@ const ContactModal = () => {
             </div>
             <div className="contact__modal--post">
               <label htmlFor="">Post</label>
-              <textarea
-                name="post"
-                id="post"
-                cols="10"
-                rows="10"
-                placeholder="Hello..."
-              />
+              <textarea name="post" id="post" rows={5} placeholder="Hello..." />
             </div>
             <footer className="">
               <Dialog.Close className="contact__modal--close">
