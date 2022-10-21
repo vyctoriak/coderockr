@@ -13,7 +13,7 @@ const Articles = React.forwardRef(({ props }, ref) => {
       </div>
       <div className="article__info">
         <span>{props.author}</span>
-        <h3>{SanitizeText(props.title)}</h3>
+        <h2>{SanitizeText(props.title)}</h2>
         <p>{SanitizeText(props.article)}</p>
       </div>
       <Link to={`/articles/${props.id}`}>

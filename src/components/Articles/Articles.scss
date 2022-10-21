@@ -22,14 +22,15 @@
     .article__info {
       width: 65%;
       text-align: left;
-      padding: 10px 15px;
+      padding: 10px 75px;
       display: flex;
       flex-direction: column;
       align-self: center;
       span {
         color: #2d2d2d;
+        line-height: 34px;
       }
-      h3 {
+      h2 {
         color: #f1a10a;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -37,10 +38,10 @@
         -webkit-line-clamp: 1; /* number of lines to show */
         line-clamp: 1;
         -webkit-box-orient: vertical;
+        line-height: 43px;
       }
       p {
         color: #2d2d2d;
-        width: 350px;
         margin: 0;
         font-size: 14px;
         line-height: 2rem;
@@ -50,6 +51,7 @@
         -webkit-line-clamp: 3; /* number of lines to show */
         line-clamp: 3;
         -webkit-box-orient: vertical;
+        line-height: 34px;
       }
     }
     &:nth-child(3n + 0) {
