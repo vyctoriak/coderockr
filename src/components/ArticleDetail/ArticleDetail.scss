@@ -1,0 +1,47 @@
+.details__container {
+  font-family: 'Rubik', sans-serif;
+  margin: 200px auto;
+  width: 100%;
+  .details__item {
+    width: 80%;
+    background-color: #ffffff;
+    margin: 0 auto;
+  }
+
+  .details__info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+
+    .details__photo {
+      width: 100%;
+      height: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .details__titles {
+      padding: 10%;
+      h3 {
+        padding: 40px 0;
+        font-weight: 400;
+        color: #2d2d2d;
+        line-height: 34px;
+      }
+      h2 {
+        color: #f1a10a;
+      }
+    }
+
+    @media only screen and (max-width: 1300px) {
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: none;
+    }
+  }
+  .details__text {
+    padding: 10%;
+    line-height: 34px;
+    font-weight: 400;
+  }
+}
